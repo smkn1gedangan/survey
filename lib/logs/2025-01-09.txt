@@ -1,0 +1,7 @@
+Time : 04:07:02
+SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: '' for column `db_ppdb_2021`.`psb_tahun_ajaran`.`ta_id` at row 1
+Raw SQL : INSERT INTO psb_tahun_ajaran VALUES ('', '2026-2027', 'yes', 'admin', NOW(), 'admin', NOW())
+
+Time : 04:06:10
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '5' for key 'PRIMARY'
+Raw SQL : INSERT INTO psb_tahun_ajaran VALUES ('5', '2025-2026', 'yes', 'admin', NOW(), 'admin', NOW())

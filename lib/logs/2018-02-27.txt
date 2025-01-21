@@ -1,0 +1,8 @@
+Time : 17:12:57
+SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+Time : 17:12:52
+SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'localhost.com' (10060)
+
+Time : 17:06:24
+SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'localhost.com' (10060)

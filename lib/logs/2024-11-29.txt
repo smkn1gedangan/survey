@@ -1,0 +1,27 @@
+Time : 03:09:36
+SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: '' for column `db_ppdb_2021`.`psb_tahun_ajaran`.`ta_id` at row 1
+Raw SQL : INSERT INTO psb_tahun_ajaran VALUES ('', '2025-2026', 'yes', 'fathur', NOW(), 'fathur', NOW())
+
+Time : 03:04:57
+SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: '' for column `db_ppdb_2021`.`psb_tahun_ajaran`.`ta_id` at row 1
+Raw SQL : INSERT INTO psb_tahun_ajaran VALUES ('', '2025-2026', 'yes', 'fathur', NOW(), 'fathur', NOW())
+
+Time : 03:01:20
+SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: '' for column `db_ppdb_2021`.`psb_tahun_ajaran`.`ta_id` at row 1
+Raw SQL : INSERT INTO psb_tahun_ajaran VALUES ('', 'Gelombang 1 2025-2026', 'yes', 'admin', NOW(), 'admin', NOW())
+
+Time : 02:54:21
+SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: '' for column `db_ppdb_2021`.`psb_tahun_ajaran`.`ta_id` at row 1
+Raw SQL : INSERT INTO psb_tahun_ajaran VALUES ('', 'as', 'yes', 'admin', NOW(), 'admin', NOW())
+
+Time : 02:51:11
+SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: '' for column `db_ppdb_2021`.`psb_tahun_ajaran`.`ta_id` at row 1
+Raw SQL : INSERT INTO psb_tahun_ajaran VALUES ('', '2024-2025', 'yes', 'admin', NOW(), 'admin', NOW())
+
+Time : 02:41:23
+SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: '' for column `db_ppdb_2021`.`psb_tahun_ajaran`.`ta_id` at row 1
+Raw SQL : INSERT INTO psb_tahun_ajaran VALUES ('', '2025-2026', 'yes', 'admin', NOW(), 'admin', NOW())
+
+Time : 02:41:21
+SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: '' for column `db_ppdb_2021`.`psb_tahun_ajaran`.`ta_id` at row 1
+Raw SQL : INSERT INTO psb_tahun_ajaran VALUES ('', '2025-2026', 'yes', 'admin', NOW(), 'admin', NOW())

@@ -1,0 +1,403 @@
+Time : 07:56:04
+SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: '' for column `db_ppdb_2021`.`psb_tahun_ajaran`.`ta_id` at row 1
+Raw SQL : INSERT INTO psb_tahun_ajaran VALUES ('', '2025 - 2026', 'yes', 'admin', NOW(), 'admin', NOW())
+
+Time : 07:54:12
+SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: '' for column `db_ppdb_2021`.`psb_tahun_ajaran`.`ta_id` at row 1
+Raw SQL : INSERT INTO psb_tahun_ajaran VALUES ('', '2025 - 2026', 'yes', 'admin', NOW(), 'admin', NOW())
+
+Time : 07:53:40
+SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: '' for column `db_ppdb_2021`.`psb_tahun_ajaran`.`ta_id` at row 1
+Raw SQL : INSERT INTO psb_tahun_ajaran VALUES ('', '2025-2026', 'yes', 'admin', NOW(), 'admin', NOW())
+
+Time : 07:20:30
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:30
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:29
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:29
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:29
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:29
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:29
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:28
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:28
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:28
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:28
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:13
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:07
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:06
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:06
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:06
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:06
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:06
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:05
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:05
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:05
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:05
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:05
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:04
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:04
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:04
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:04
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:04
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:03
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:03
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 07:20:01
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:33:32
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:33:31
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran ORDER BY aktif ASC
+
+Time : 06:33:28
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran ORDER BY aktif ASC
+
+Time : 06:33:28
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran ORDER BY aktif ASC
+
+Time : 06:33:28
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran ORDER BY aktif ASC
+
+Time : 06:33:28
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran ORDER BY aktif ASC
+
+Time : 06:33:27
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran ORDER BY aktif ASC
+
+Time : 06:12:21
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran ORDER BY aktif ASC
+
+Time : 06:12:20
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:12:19
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran ORDER BY aktif ASC
+
+Time : 06:12:18
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:12:16
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran ORDER BY aktif ASC
+
+Time : 06:12:15
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran ORDER BY aktif ASC
+
+Time : 06:12:14
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:12:14
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:12:14
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:12:13
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:12:13
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:12:13
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:12:12
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:12:12
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:12:12
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:12:11
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:12:06
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:12:06
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:12:06
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:12:06
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:12:05
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:07:18
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:04:10
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:04:10
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:04:09
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:04:09
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:04:08
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:04:08
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:04:08
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:04:08
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:04:08
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:04:07
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:04:07
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:04:07
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 06:04:06
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 05:57:39
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 05:57:39
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 05:57:38
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 05:57:38
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 05:57:38
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 05:57:38
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 05:57:37
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 05:57:37
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 05:57:37
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 05:57:37
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 05:57:37
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 05:57:36
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 05:57:36
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 05:57:36
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 05:57:36
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 05:57:36
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 05:57:35
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 05:35:50
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 05:35:44
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 05:35:42
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 05:35:39
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran ORDER BY aktif ASC
+
+Time : 05:35:38
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 05:35:33
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 05:35:19
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1
+
+Time : 05:35:16
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ppdb_2021.psb_tahun_ajaran' doesn't exist
+Raw SQL : SELECT ta_id, tahun_ajaran FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1

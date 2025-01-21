@@ -1,0 +1,241 @@
+<html>
+<head>
+<title>INFO PPDB 2021</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://static.ppdbjatim.net/include/css/style2.css">
+<link rel="stylesheet" href="https://static.ppdbjatim.net/include/select2/select2.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.1.1/css/responsive.bootstrap.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script src="https://static.ppdbjatim.net/include/jquery/jquery.min.js"></script>
+<script src="https://static.ppdbjatim.net/include/bootstrap/bootstrap.min.js"></script>
+<script src="https://static.ppdbjatim.net/include/select2/select2.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/responsive/2.1.1/js/dataTables.responsive.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/responsive/2.1.1/js/responsive.bootstrap.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function () {
+            $(".js-example-basic-single").select2();
+        });
+    </script>
+<script>
+        $(document).ready(function () {
+            $('#example').DataTable({
+                "lengthMenu": [[25, 50, 100, -1], [25, 50, 100, "All"]]
+            });
+            $('#example2').DataTable({
+                "lengthMenu": [[25, 50, 100, -1], [25, 50, 100, "All"]]
+            });
+        });
+    </script>
+<style>
+    #footer {
+       position:fixed;
+       bottom:0;
+       width:100%;
+       height:30px;   /* Height of the footer */
+       background:#005f6b;
+    }   
+    </style>
+</head><body>
+<script type="text/javascript">
+    var ServerInitTimestamp = new Date(2020, 4, 03, 14, 56, 59);
+    var LocalInitTimestamp = new Date();
+    var jarak = LocalInitTimestamp - ServerInitTimestamp;
+    var bulan = new Array("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "Nopember", "Desember");
+
+    function jam() {
+        var tanggal = new Date(new Date() - jarak);
+        document.getElementById("clock-widget").innerHTML = ("0" + tanggal.getHours()).slice(-2) + ":" + ("0" + tanggal.getMinutes()).slice(-2) + ":" + ("0" + tanggal.getSeconds()).slice(-2);
+        document.getElementById("date-widget").innerHTML = tanggal.getDate() + " " + bulan[tanggal.getMonth()] + " " + tanggal.getFullYear();
+        setTimeout(function () {
+            jam();
+        }, 1000);
+    }
+
+    window.setTimeout(function () {
+        jam();
+    }, 1000);
+</script>
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container-fluid">
+
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" style="background-color:white;" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="#">PPDB</a>
+ </div>
+
+<div class="collapse navbar-collapse" id="navbar">
+<ul class="nav navbar-nav">
+<li><a href="indexppdbnega.php"><strong>Pendataan/ Isi Survey</strong></a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+<span class="element brand place-right">
+<span class="font-agak-tebel" id="date-widget"></span> |
+<span class="font-tipis" id="clock-widget"></span>
+</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+
+
+</nav><div class="container-fluid" style="margin-bottom:60px;">
+<div class="row">
+<div class="col-md-8 col-md-offset-2 col-xs-12 col-sm-12 umum">
+<br>
+<br>
+<br>
+<br>
+<p class="heading1 text-center">Jadwal <span class="font-tipis">Pelaksanaan PPDB Tahun Pelajaran 2021/2022 <strong>UNTUK KEPERLUAN PAK 2020<strong></span></p>
+<h3 align="center"> Silakan Baca dulu jadwal di bawah ini, baru isi <a href="indexppdbnega.php"> <strong>Pendataan</strong></a>, semua calon siswa yang sudah mengisi di halaman PPDB SMKN 1 Gedangan akan di hubungi dengan sms atau WA saat pendaftaran resmi dibuka</h3>
+<div class="font">
+<div class="table-responsive">
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>No</th>
+<th>Kegiatan</th>
+<th>Tanggal</th>
+<th>Jam</th>
+
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>1.</td>
+<td colspan="4" style="font-weight: 600">Pengambilan PIN</td>
+</tr>
+<tr>
+<td></td>
+<td>login <a href="https://ppdbjatim.net"> <strong>ppdbjatim.net </strong></a> dengan menggunakan NISN dan Nomor Peserta Ujian Nasional</td>
+<td>
+15 s.d 16 Juni 2018
+</td>
+<td>24 Jam</td>
+</tr>
+<tr>
+<td></td>
+<td>Kantor SMKN 1 Gedangan </td>
+<td>
+15 s.d 16 Juni 2018
+</td>
+<td>Jam 07.30 sd 13.00</td>
+</tr>
+</tr>
+<tr>
+<td>2.</td>
+<td colspan="4" style="font-weight: 600">PPDB Jalur Afirmasi, Jalur Perpindahan Tugas Orang Tua, dan Jalur Prestasi Hasil Perlombaan dan/atau Penghargaan (SMA/SMK)</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Pendaftaran</strong> 
+login <a href="https://ppdbjatim.net"> <strong>ppdbjatim.net </strong></a> ppdbjatim.net dengan menggunakan PIN dan Nomor Peserta Ujian Nasional</td>
+<td>
+15 s.d 16 Juni 2018
+</td>
+<td>24 Jam</td>
+</tr>
+
+<tr>
+<td></td>
+<td>Verifikasi dan validasi</td>
+<td>16 s.d 18 Juni 2018</td>
+<td>24 Jam</td>
+
+</tr>
+<tr>
+<td></td>
+<td>Pengumuman</td>
+<td>19 Juni 2018</td>
+<td>01.00 WIB</td>
+
+</tr>
+<tr>
+<td></td>
+<td>Daftar Ulang</td>
+<td>19 s.d 20 Juni 2018/td>
+<td>
+01.00 s.d 23.59 WIB
+</td>
+
+</tr>
+<tr>
+ <td>3.</td>
+<td colspan="3" style="font-weight: 600">PPDB Jalur Prestasi Gabungan Rerata Nilai Rapor Peserta Didik dan Rerata Nilai Ujian Nasional Sekolah Tahun 2019 (SMA) dan Jalur Reguler (SMK)</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Pendaftaran </strong> 
+login <a href="https://ppdbjatim.net"> <strong>ppdbjatim.net </strong></a> dengan menggunakan PIN dan Nomor Peserta Ujian Nasional</td>
+<td>25 s.d 27 Juni 2018</td>
+<td>24 Jam</td>
+
+</tr>
+<tr>
+<td></td>
+<td>Penutupan Pendaftaran</td>
+<td>27 Juni 2018</td>
+<td>
+23.59 WIB
+</td>
+
+</tr>
+<tr>
+<td></td>
+<td>Pengumuman</td>
+<td>28 Juni 2018</td>
+<td>
+01.00 WIB
+</td>
+
+</tr>
+<tr>
+<td></td>
+<td>Daftar Ulang</td>
+<td>29 s.d 30 Juni 2018</td>
+<td>
+01.00 - 23.59 WIB
+</td>
+
+</tr>
+</tbody>
+</table>
+</div>
+</div> </div>
+</div>
+</div>
+<div id="footer">
+
+<p class="pull-left tulisan-biasa font-putih" style="margin-top: 5px; margin-left: 150px">© 2020 - <strong>PPDB</strong>SMK Negeri 1 Gedangan</p>
+
+
+
+</div>
+</body>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-99320977-1']);
+    _gaq.push(['_setDomainName', 'ppdb.smkn1gedangan-malang']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+</html>
