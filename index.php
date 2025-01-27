@@ -130,11 +130,8 @@
 									<div class="col-md-8">
 										<textarea class="form-control" name="alamat_orang_tua_wali" id="alamat_orang_tua_wali" style="resize:vertical; max-height:150px;"></textarea>
 									</div>
-								</div>
-								
-<hr>
-								
-
+								</div>							
+							<hr>
 							</div>
 							<div class="panel-footer text-center">
 								<button type="submit" name="proses" id="proses" class="btn btn-primary">Simpan</button>

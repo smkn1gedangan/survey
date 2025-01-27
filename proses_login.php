@@ -16,7 +16,7 @@
 
 	// Set password
 	 $password_salted = hash("SHA512", $password.$salt);
-//	 $password_salted = "root";
+	//	$password_salted = "root";
 	
 	// Check psb_users
 	$query = "SELECT * FROM psb_users WHERE psb_users.`username`='$username' AND psb_users.`password`='$password_salted' AND psb_users.`aktif`='yes'";

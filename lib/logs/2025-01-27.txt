@@ -1,0 +1,25 @@
+Time : 04:36:24
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+Raw SQL : select id from psb_tahun_ajaran where aktif = 'yes'
+
+Time : 04:36:22
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+Raw SQL : select id from psb_tahun_ajaran where aktif = 'yes'
+
+Time : 04:36:05
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+Raw SQL : select id from psb_tahun_ajaran where aktif = 'yes'
+
+Time : 04:35:59
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+Raw SQL : select id from psb_tahun_ajaran where aktif = 'yes'
+
+Time : 03:40:14
+SQLSTATE[HY000]: General error: 1525 Incorrect DATE value: ''
+Raw SQL : SELECT data_id FROM psb_data_siswa WHERE nama_orang_tua_wali = 'hajierersss' AND nama_calon_siswa = '\"John\'; DROP TABLE psb_data_siswa; --\"' AND tempat_lahir_calon_siswa = 'tes tes testes tse ' AND tanggal_lahir_calon_siswa = ''
+
+Time : 02:06:58
+SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+
+Time : 02:06:20
+SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it

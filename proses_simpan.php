@@ -44,7 +44,9 @@
 			}
 			else {
 				// Proses simpan data ke database
-				$q_input_data = "INSERT INTO psb_data_siswa (`data_id`, `nama_orang_tua_wali`, `pekerjaan_orang_tua_wali`, `alamat_orang_tua_wali`, `jurusan`, `telepon_orang_tua_wali`, `email_orang_tua_wali`, `nama_calon_siswa`, `asal_sekolah`, `tempat_lahir_calon_siswa`, `tanggal_lahir_calon_siswa`, `ta_id`, `status_penerimaan`, `checker`, `status_email`, `created_by`, `created_date`, `updated_by`, `updated_date`) VALUES ('', '$nama_orang_tua_wali', '$pekerjaan_orang_tua_wali', '$alamat_orang_tua_wali', '$jurusan', '$telepon_orang_tua_wali','', '$nama_calon_siswa', '$asal_sekolah', '$tempat_lahir_calon_siswa', '$tanggal_lahir_calon_siswa', '$ta_id', 'Calon', '', 'tidak_diketahui', '$client_ip', NOW(), '$client_ip', NOW())";
+				$q_input_data = "INSERT INTO psb_data_siswa (`nama_orang_tua_wali`, `pekerjaan_orang_tua_wali`, `alamat_orang_tua_wali`, `jurusan`, `telepon_orang_tua_wali`, `email_orang_tua_wali`, `nama_calon_siswa`, `asal_sekolah`, `tempat_lahir_calon_siswa`, `tanggal_lahir_calon_siswa`, `ta_id`,  `checker`, `status_email`, `created_by`, `created_date`, `updated_by`, `updated_date`) 
+				VALUES 
+				('$nama_orang_tua_wali', '$pekerjaan_orang_tua_wali', '$alamat_orang_tua_wali', '$jurusan', '$telepon_orang_tua_wali','', '$nama_calon_siswa', '$asal_sekolah', '$tempat_lahir_calon_siswa', '$tanggal_lahir_calon_siswa', '$ta_id','', 'tidak_diketahui', '$client_ip', NOW(), '$client_ip', NOW())";
 				$proses_simpan = $databaseClass->query($q_input_data);
 				$data_id_baru  = $databaseClass->lastInsertId();
 
@@ -81,7 +83,7 @@
 					$mail->Port = 587;
 
 					//Set the encryption system to use - ssl (deprecated) or tls
-					$mail->SMTPSecure = 'tls';
+					$mail->SMTPSecure = 'starttls';
 
 					//Whether to use SMTP authentication
 					$mail->SMTPAuth = true;
@@ -151,7 +153,7 @@
 					}
 					$proses_status_email = $databaseClass->query($q_status_email);
 					// Set info email
-					$q_info_email        = "INSERT INTO psb_email_info VALUES ('', '$data_id_baru', 'Informasi : $info_email | Penerima : $penerimanya')";
+					$q_info_email        = "INSERT INTO psb_email_info (`data_id`,`keterangan`) VALUES ($data_id_baru, 'Informasi : $info_email | Penerima : $penerimanya')";
 					$proses_info_email   = $databaseClass->query($q_info_email);
 
 					// Akhir kirim email =====================>

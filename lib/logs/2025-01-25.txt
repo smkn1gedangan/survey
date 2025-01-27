@@ -1,0 +1,43 @@
+Time : 10:00:18
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''data_id','keterangan') VALUES (2120, 'Informasi : SMTP connect() failed. https:' at line 1
+Raw SQL : INSERT INTO psb_email_info ('data_id','keterangan') VALUES (2120, 'Informasi : SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting | Penerima :  ruhtaf1987@gmail.com ruhtaf1987@gmail.com')
+
+Time : 09:58:36
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''data_id','keterangan') VALUES ('2119', 'Informasi : SMTP connect() failed. http' at line 1
+Raw SQL : INSERT INTO psb_email_info ('data_id','keterangan') VALUES ('2119', 'Informasi : SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting | Penerima :  ruhtaf1987@gmail.com ruhtaf1987@gmail.com')
+
+Time : 09:42:58
+SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'info_id' at row 1
+Raw SQL : INSERT INTO psb_email_info VALUES ('', '2118', 'Informasi : SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting | Penerima :  ruhtaf1987@gmail.com ruhtaf1987@gmail.com')
+
+Time : 09:38:49
+SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'info_id' at row 1
+Raw SQL : INSERT INTO psb_email_info VALUES ('', '2117', 'Informasi : SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting | Penerima :  ruhtaf1987@gmail.com ruhtaf1987@gmail.com')
+
+Time : 09:37:42
+SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'info_id' at row 1
+Raw SQL : INSERT INTO psb_email_info VALUES ('', '2116', 'Informasi : SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting | Penerima :  ruhtaf1987@gmail.com ruhtaf1987@gmail.com')
+
+Time : 03:28:17
+SQLSTATE[01000]: Warning: 1265 Data truncated for column 'status_email' at row 1
+Raw SQL : INSERT INTO psb_data_siswa (`nama_orang_tua_wali`, `pekerjaan_orang_tua_wali`, `alamat_orang_tua_wali`, `jurusan`, `telepon_orang_tua_wali`, `email_orang_tua_wali`, `nama_calon_siswa`, `asal_sekolah`, `tempat_lahir_calon_siswa`, `tanggal_lahir_calon_siswa`, `ta_id`,  `checker`, `status_email`, `created_by`, `created_date`, `updated_by`, `updated_date`) VALUES ('tes tes tes', 'tes tse tse tset', 'tse tse set', 'SIJA', '08350328498','', 'tes tes tes ', 'tes tes tset ste', 'tes tes tes', '2025-01-23', '5','', '', '::1', NOW(), '::1', NOW())
+
+Time : 03:26:02
+SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1
+Raw SQL : INSERT INTO psb_data_siswa (`nama_orang_tua_wali`, `pekerjaan_orang_tua_wali`, `alamat_orang_tua_wali`, `jurusan`, `telepon_orang_tua_wali`, `email_orang_tua_wali`, `nama_calon_siswa`, `asal_sekolah`, `tempat_lahir_calon_siswa`, `tanggal_lahir_calon_siswa`, `ta_id`,  `checker`, `status_email`, `created_by`, `created_date`, `updated_by`, `updated_date`) VALUES ('tes tes tes', 'tes tse tse tset', 'tse tse set', 'SIJA', '08350328498','', 'tes tes tes ', 'tes tes tset ste', 'tes tes tes', '2025-01-23', '5','Calon', '', 'tidak_diketahui', '::1', NOW(), '::1', NOW())
+
+Time : 03:22:10
+SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1
+Raw SQL : INSERT INTO psb_data_siswa (`nama_orang_tua_wali`, `pekerjaan_orang_tua_wali`, `alamat_orang_tua_wali`, `jurusan`, `telepon_orang_tua_wali`, `email_orang_tua_wali`, `nama_calon_siswa`, `asal_sekolah`, `tempat_lahir_calon_siswa`, `tanggal_lahir_calon_siswa`, `ta_id`, `status_penerimaan`, `checker`, `status_email`, `created_by`, `created_date`, `updated_by`, `updated_date`) VALUES ('tes tes tes', 'tes tse tse tset', 'tse tse set', 'SIJA', '08350328498','', 'tes tes tes ', 'tes tes tset ste', 'tes tes tes', '2025-01-23', '5','', 'Calon', '', 'tidak_diketahui', '::1', NOW(), '::1', NOW())
+
+Time : 03:18:01
+SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1
+Raw SQL : INSERT INTO psb_data_siswa (`nama_orang_tua_wali`, `pekerjaan_orang_tua_wali`, `alamat_orang_tua_wali`, `jurusan`, `telepon_orang_tua_wali`, `email_orang_tua_wali`, `nama_calon_siswa`, `asal_sekolah`, `tempat_lahir_calon_siswa`, `tanggal_lahir_calon_siswa`, `ta_id`, `status_penerimaan`, `checker`, `status_email`, `created_by`, `created_date`, `updated_by`, `updated_date`) VALUES ('tes tes tes', 'tes tse tse tset', 'tse tse set', 'SIJA', '08350328498','', 'tes tes tes ', 'tes tes tset ste', 'tes tes tes', '2025-01-23', '5','', 'Calon', '', 'tidak_diketahui', '::1', NOW(), '::1', NOW())
+
+Time : 03:08:33
+SQLSTATE[01000]: Warning: 1265 Data truncated for column 'status_penerimaan' at row 1
+Raw SQL : INSERT INTO psb_data_siswa (`nama_orang_tua_wali`, `pekerjaan_orang_tua_wali`, `alamat_orang_tua_wali`, `jurusan`, `telepon_orang_tua_wali`, `email_orang_tua_wali`, `nama_calon_siswa`, `asal_sekolah`, `tempat_lahir_calon_siswa`, `tanggal_lahir_calon_siswa`, `ta_id`, `status_penerimaan`, `checker`, `status_email`, `created_by`, `created_date`, `updated_by`, `updated_date`) VALUES ('tes tes tes', 'tes tse tse tset', 'tse tse set', 'SIJA', '08350328498','', 'tes tes tes ', 'tes tes tset ste', 'tes tes tes', '2025-01-23', '5', 'Calon', '', 'tidak_diketahui', '::1', NOW(), '::1', NOW())
+
+Time : 02:59:32
+SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'data_id' at row 1
+Raw SQL : INSERT INTO psb_data_siswa (`data_id`, `nama_orang_tua_wali`, `pekerjaan_orang_tua_wali`, `alamat_orang_tua_wali`, `jurusan`, `telepon_orang_tua_wali`, `email_orang_tua_wali`, `nama_calon_siswa`, `asal_sekolah`, `tempat_lahir_calon_siswa`, `tanggal_lahir_calon_siswa`, `ta_id`, `status_penerimaan`, `checker`, `status_email`, `created_by`, `created_date`, `updated_by`, `updated_date`) VALUES ('', 'tes tes tes', 'tes tse tse tset', 'tse tse set', 'SIJA', '08350328498','', 'tes tes tes ', 'tes tes tset ste', 'tes tes tes', '2025-01-23', '5', 'Calon', '', 'tidak_diketahui', '::1', NOW(), '::1', NOW())

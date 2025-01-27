@@ -119,7 +119,7 @@ class DB
 				}
 
 				# Execute SQL 
-				$this->succes 	= $this->sQuery->execute();		
+				$this->sQuery->execute();		
 			}
 			catch(PDOException $e)
 			{

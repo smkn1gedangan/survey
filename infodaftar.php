@@ -83,21 +83,20 @@
 										</thead>
 										<tbody>
 											<?php 
-											mysql_connect('localhost', 'bapel', 'kadalkesit');
 											// Ambil semua data calon siswa
-												// $query = "SELECT * FROM psb_data_siswa";
-												if (isset($_POST["pilih_tahun_ajaran"])) {
-													$ta_pilihan = mysql_real_escape_string($_POST["pilih_tahun_ajaran"]);
+											if (isset($_POST["pilih_tahun_ajaran"])) {
+												$ta_pilihan = $_POST["pilih_tahun_ajaran"];
+											}
+											else {
+												$query_ta_standar = "SELECT ta_id FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1";
+												$data_standar     = $databaseClass->query($query_ta_standar);
+												$ta_pilihan       = "";
+												foreach ($data_standar as $dt_standar) {
+													$ta_pilihan = $dt_standar["ta_id"];
 												}
-												else {
-													$query_ta_standar = "SELECT ta_id FROM psb_tahun_ajaran WHERE aktif = 'yes' ORDER BY ta_id DESC LIMIT 1";
-													$data_standar     = $databaseClass->query($query_ta_standar);
-													$ta_pilihan       = "";
-													foreach ($data_standar as $dt_standar) {
-														$ta_pilihan = $dt_standar["ta_id"];
-													}
-												}
-												$query = "SELECT * FROM  psb_data_siswa WHERE ta_id = '$ta_pilihan' ORDER BY data_id DESC";
+											}
+											$query = "SELECT * FROM  psb_data_siswa WHERE ta_id = '$ta_pilihan' ORDER BY data_id DESC";
+											
 												$data  = $databaseClass->query($query);
 												$view  = "";
 												$no    = 0;
