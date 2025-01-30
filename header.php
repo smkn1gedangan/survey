@@ -30,10 +30,11 @@
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="ppdbjatim.php">Info Jadwal PPDB</a></li>
 							<li><a class="nav-link" href="index.php">Isi Survey</a></li>
+							<li><a class="nav-link" href="infodaftar.php">Responden/Peserta Survey</a></li>
 							<?php if (isset($_SESSION['psb_username']) && isset($_SESSION['psb_level']) && $_SESSION['psb_username']!="" && $_SESSION['psb_level']!=""): ?>
 								<li><a class="nav-link" href="dashboard.php">Dashboard</a></li>
 								<li><a class="nav-link" href="laporan.php">Laporan</a></li>
-								<li><a class="nav-link" href="infodaftar.php">Info Daftar</a></li>
+								
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $_SESSION["psb_nama_depan"]." ".$_SESSION["psb_nama_belakang"]; ?> <span class="caret"></span></a>
 									<ul class="dropdown-menu">

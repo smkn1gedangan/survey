@@ -1,0 +1,11 @@
+Time : 01:28:06
+SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'ta_id' at row 1
+Raw SQL : INSERT INTO psb_tahun_ajaran VALUES ('', '2026 - 2027', 'yes', 'admin', NOW(), 'admin', NOW())
+
+Time : 01:24:19
+SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'ta_id' at row 1
+Raw SQL : INSERT INTO psb_tahun_ajaran VALUES ('', '2026 - 2027', 'yes', 'admin', NOW(), 'admin', NOW())
+
+Time : 01:23:54
+SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'ta_id' at row 1
+Raw SQL : INSERT INTO psb_tahun_ajaran VALUES ('', '2026 - 2027', 'yes', 'admin', NOW(), 'admin', NOW())

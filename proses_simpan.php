@@ -265,7 +265,7 @@
 		// Jika id tahun ajaran tidak ada, proses simpan ke database
 		if ($ta_id_lama=="") {
 			// Masukkan data ta baru
-			$q_tahun_ajaran_baru = "INSERT INTO psb_tahun_ajaran VALUES ('', '$tahun_ajaran', '$aktif', '$creator', NOW(), '$creator', NOW())";
+			$q_tahun_ajaran_baru = "INSERT INTO psb_tahun_ajaran (tahun_ajaran,aktif,created_by, created_date,updated_by,updated_date) VALUES ('$tahun_ajaran', '$aktif', '$creator', NOW(), '$creator', NOW())";
 //			$q_tahun_ajaran_baru = "INSERT INTO psb_tahun_ajaran VALUES ('5', '2025-2026', '$aktif', '$creator', NOW(), '$creator', NOW())";
 			$proses_3            = $databaseClass->query($q_tahun_ajaran_baru);
 
