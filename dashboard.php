@@ -132,7 +132,7 @@ if (isset($_SESSION['psb_username']) && isset($_SESSION['psb_level']) && $_SESSI
 													$view    .= "<td id='status_$data_id'>".ucfirst($dt["status_penerimaan"])."</td>";
 													// Tampilan aksi
 													$view    .= "<td><div class='btn-group btn-group-sm'>";
-													$view    .= "<button class='btn btn-sm btn-primary' onclick=\"lihat_detail('$data_id')\" title='Detail Calon Siswa'> <!--<i class='glyphicon glyphicon-eye-open'></i>--> Detail</button>";
+													$view    .= "<button class='btn btn-sm btn-primary' data-toggle='modal' data-target='#modal_detail' onclick=lihat_detail('$data_id') title='Detail Calon Siswa'> <!--<i class='glyphicon glyphicon-eye-open'></i>--> Detail</button>";
 													$view    .= "<button class='btn btn-sm btn-default' onclick=\"ubah_data_cs('$data_id')\" title='Ubah Data Calon Siswa'> <!--<i class='glyphicon glyphicon-pencil'></i>--> Ubah</button>";
 														// if ($dt["status_penerimaan"]=="pending") {
 														// 	$view    .= "<a href='#' class='btn btn-sm btn-success' title='Terima calon siswa' onclick=\"confirm('Proses TERIMA Calon siswa $dt[nama_calon_siswa] ?')\"> <i class='glyphicon glyphicon-ok'></i> Terima </a>";
