@@ -6,12 +6,6 @@
              "Helpers\\": "Helpers/"
         }
     },
-    "authors": [
-        {
-            "name": "hajir1",
-            "email": "paksutrisno934@gmail.com"
-        }
-    ],
     "require": {
         "phpoffice/phpspreadsheet": "^3.9",
         "vlucas/phpdotenv": "^5.6"
