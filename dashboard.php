@@ -1,5 +1,7 @@
 <?php session_start();
 
+
+
 // Jika user sudah sign in
 if (isset($_SESSION['psb_username']) && isset($_SESSION['psb_level']) && $_SESSION['psb_username']!="" && $_SESSION['psb_level']!="") {
 	// Require class database
@@ -134,16 +136,16 @@ if (isset($_SESSION['psb_username']) && isset($_SESSION['psb_level']) && $_SESSI
 													$view    .= "<td><div class='btn-group btn-group-sm'>";
 													$view    .= "<button class='btn btn-sm btn-primary' onclick=\"lihat_detail('$data_id')\" title='Detail Calon Siswa'> <!--<i class='glyphicon glyphicon-eye-open'></i>--> Detail</button>";
 													$view    .= "<button class='btn btn-sm btn-default' onclick=\"ubah_data_cs('$data_id')\" title='Ubah Data Calon Siswa'> <!--<i class='glyphicon glyphicon-pencil'></i>--> Ubah</button>";
-														// if ($dt["status_penerimaan"]=="pending") {
-														// 	$view    .= "<a href='#' class='btn btn-sm btn-success' title='Terima calon siswa' onclick=\"confirm('Proses TERIMA Calon siswa $dt[nama_calon_siswa] ?')\"> <i class='glyphicon glyphicon-ok'></i> Terima </a>";
-														// 	$view    .= "<a href='#' class='btn btn-sm btn-danger' title='Tolak calon siswa' onclick=\"confirm('Proses TOLAK Calon siswa $dt[nama_calon_siswa] ?')\"> <i class='glyphicon glyphicon-remove'></i> Tolak</a>";
-														// }
-														// elseif ($dt["status_penerimaan"]=="terima") {
-														// 	$view    .= "<a href='#' class='btn btn-sm btn-danger' title='Tolak calon siswa' onclick=\"confirm('Proses TOLAK Calon siswa $dt[nama_calon_siswa] ?')\"> <i class='glyphicon glyphicon-remove'></i> Tolak</a>";
-														// }
-														// elseif ($dt["status_penerimaan"]=="tolak") {
-														// 	$view    .= "<a href='#' class='btn btn-sm btn-success' title='Terima calon siswa' onclick=\"confirm('Proses TERIMA Calon siswa $dt[nama_calon_siswa] ?')\"> <i class='glyphicon glyphicon-ok'></i> Terima</a>";
-														// }
+													$view    .= "<form
+													action='hapusdata.php' 
+													method='post' id='delete-$data_id' style='display:inline;'>
+													 <input type='hidden' name='id' value='$data_id'>
+                                                        		<button type='button' class='btn btn-danger btn-sm delete-btn'
+                                                            data-id=$data_id >
+                                                            Hapus
+                                                        </button>
+                                                    </form>";
+														
 													$view    .= "</div></td>";
 													// Hidden data
 													$view    .= "<input type='hidden' name='tmp_lhr_$data_id' id='tmp_lhr_$data_id' value='".stripslashes($dt["tempat_lahir_calon_siswa"])."'>";
@@ -228,6 +230,7 @@ if (isset($_SESSION['psb_username']) && isset($_SESSION['psb_level']) && $_SESSI
 	// Ambil modal tahun ajaran
 	include './modal_tahun_ajaran.php';
 }
+
 else {
 	// Redirect dashboard
 	header("Location: ./index.php");
@@ -235,3 +238,29 @@ else {
 }
 
 ?>
+<script>
+    document.querySelectorAll('.delete-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const dataSiswaId = this.getAttribute('data-id');
+		
+            Swal.fire({
+                title: 'Apakah Anda yakin?',
+                text: 'Data Siswa ini akan dihapus secara permanen!',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Ya, hapus!',
+                cancelButtonText: 'Tidak, batal',
+                position: 'center',
+				customClass: {
+					popup: 'my-swal'
+				}
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    document.getElementById('delete-' + dataSiswaId).submit();
+                }
+            });
+        });
+    });
+</script>

@@ -1,0 +1,35 @@
+Time : 06:24:36
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : DELETE FROM psb_data_siswa WHERE data_id = ?
+
+Time : 06:22:04
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : DELETE FROM psb_data_siswa WHERE data_id = ?
+
+Time : 06:21:33
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : DELETE FROM psb_data_siswa WHERE data_id = ?
+
+Time : 06:21:30
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : DELETE FROM psb_data_siswa WHERE data_id = ?
+
+Time : 06:20:10
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : DELETE FROM psb_data_siswa WHERE data_id = ?
+
+Time : 06:19:16
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : DELETE FROM psb_data_siswa WHERE data_id = ?
+
+Time : 06:19:01
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : DELETE FROM psb_data_siswa WHERE data_id = ?
+
+Time : 06:18:43
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : DELETE FROM psb_data_siswa WHERE data_id = ?
+
+Time : 06:18:33
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'
+Raw SQL : DELETE FROM psb_data_siswa WHERE id = ?

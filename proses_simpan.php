@@ -1,11 +1,31 @@
 <?php session_start();
 	// Require class database
 	require_once(__DIR__ . '/lib/db.class.php');
+	require_once 'bootstrap.php';
 	$databaseClass = new DB();
 
 	// Ambil aksi yang dijalankan
 	$aksi = $_POST["aksi"];
+	$recaptcha = $_POST['g-recaptcha-response'];
+	$secret = $_ENV["SECRET_KEY"];
+	// Kirim ke Google untuk diverifikasi
+    $url = "https://www.google.com/recaptcha/api/siteverify";
+    $data = [
+        'secret' => $secret,
+        'response' => $recaptcha,
+    ];
+	$options = [
+        'http' => [
+            'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+            'method'  => 'POST',
+            'content' => http_build_query($data),
+        ],
+    ];
 
+    $context  = stream_context_create($options);
+    $result = file_get_contents($url, false, $context);
+    $resultJson = json_decode($result, true);
+	var_dump($resultJson);
 	/**
 	*	Proses simpan dan kirim email
 	*	Data calon siswa diisikan oleh pihak luar (orang tua calon siswa)
@@ -16,7 +36,7 @@
 	*/
 	if ($aksi == "simpan_calon_siswa") {
 		// Jika captcha sesuai
-		//if ($_SESSION["Captcha"] == $_POST["captcha"]){
+		if ($resultJson['success'] == true){
 			// Tentukan variabel dari data posting formulir
 			$nama_orang_tua_wali       = addslashes($_POST["nama_orang_tua_wali"]);
 			$pekerjaan_orang_tua_wali  = addslashes($_POST["pekerjaan_orang_tua_wali"]);
@@ -53,7 +73,7 @@
 				// Jika proses simpan berhasil - kembalikan ke halaman awal
 				if ($proses_simpan>=1) {
 					// Set informasi
-					$_SESSION["informasi_formulir"] =" <font color=red>Pendaftaran berhasil! Pastikan <b>no HP aktif</b>, INFORMASI tahapan selanjutnya akan dikirim ke no HP, klik menu PENDAFTAR untuk untuk melihat data anda  . Terima kasih.</font>";
+					$_SESSION["informasi_formulir"] =" <font color=blue>Pendaftaran berhasil! Pastikan <b>no HP aktif</b>, INFORMASI tahapan selanjutnya akan dikirim ke no HP, klik menu PENDAFTAR untuk untuk melihat data anda  . Terima kasih.</font>";
 
 					// Kirim email =======================>
 
@@ -171,13 +191,17 @@
 			header("Location: ./index.php");
 			die();
 		}*/
-	}
+		}else{
+			$_SESSION["informasi_formulir"] = "<font color=red>Pendaftaran ditolak! Pastikan anda <b>mencentang</b> captha terlebih dahulu!</font>";
+			header("Location: dashboard.php");
+		}
 
 
 	/**
 	*	Proses ubah data calon siswa
 	*	
 	*/
+	}
 	elseif ($aksi == "ubah_calon_siswa") {
 		// Tentukan variabel dari data posting formulir
 		$data_id                   = $_POST["id_data_ubah"];
@@ -259,7 +283,7 @@
 		$q_tahun_ajaran_lama = "SELECT ta_id FROM psb_tahun_ajaran WHERE tahun_ajaran = '$tahun_ajaran'";
 		$proses_2            = $databaseClass->query($q_tahun_ajaran_lama);
 		$ta_id_lama          = "";
-		foreach ($proses_2 as $p2) {
+	foreach ($proses_2 as $p2) {
 			$ta_id_lama = $p2["ta_id"];
 		}
 		// Jika id tahun ajaran tidak ada, proses simpan ke database

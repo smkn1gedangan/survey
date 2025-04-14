@@ -24,7 +24,7 @@ class DB
 
 	# @object, Object for logging exceptions	
 	private $log;
-
+	public $conn;
 	# @array, The parameters of the SQL query
 	private $parameters;
 		
@@ -40,6 +40,9 @@ class DB
 			$this->log = new Log();	
 			$this->Connect();
 			$this->parameters = array();
+			$this->settings = parse_ini_file("settings.ini.php");
+			$this->conn = new PDO('mysql:host='.$this->settings["host"].';dbname='.$this->settings["dbname"], $this->settings["user"], $this->settings["password"]);
+			$this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		}
 	
        /**
@@ -50,6 +53,9 @@ class DB
 	*	3. Tries to connect to the database.
 	*	4. If connection failed, exception is displayed and a log file gets created.
 	*/
+		public function conn()  {
+			return $this->conn;
+		}
 		private function Connect()
 		{
 			$this->settings = parse_ini_file("settings.ini.php");

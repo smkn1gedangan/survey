@@ -2,6 +2,8 @@
 							
 </body>
 </html>
+<!-- sweetalert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <!-- Aditional Script -->
 <script type="text/javascript" src="./assets/js/jquery-1.11.3.min.js"></script>
 <!-- Bootstrap -->

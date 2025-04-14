@@ -1,3 +1,4 @@
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <?php session_start();
 	// Require class database
 	//require_once(__DIR__ . '/lib/db.class.php');
@@ -6,6 +7,7 @@
 	// Ambil header
 	include("./header.php");
 	require_once(__DIR__ . '/lib/db.class.php');
+	require_once 'bootstrap.php';
 	$databaseClass = new DB();
 	?>
 	<div class="container document">
@@ -14,7 +16,7 @@
 	    		<?php 
 	    		// Tampilkan informasi jika ada!
 	    		if (isset($_SESSION["informasi_formulir"])) {
-	    			echo "<div class='alert alert-info'>".$_SESSION["informasi_formulir"]."</div>";
+	    			echo "<div class='alert alert-info text-danger'>".$_SESSION["informasi_formulir"]."</div>";
 	    			unset($_SESSION["informasi_formulir"]);
 	    		}
 
@@ -130,7 +132,12 @@
 									<div class="col-md-8">
 										<textarea class="form-control" name="alamat_orang_tua_wali" id="alamat_orang_tua_wali" style="resize:vertical; max-height:150px;"></textarea>
 									</div>
-								</div>							
+								</div>
+								<div class="form-group">
+								<label class="col-md-3 control-label" >
+									</label>
+									<div class="g-recaptcha col-md-8" data-sitekey="<?php echo $_ENV['SITE_KEY'];?>"></div>						
+								</div>
 							<hr>
 							</div>
 							<div class="panel-footer text-center">

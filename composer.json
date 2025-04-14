@@ -2,7 +2,8 @@
     "name": "user/survey",
     "autoload": {
         "psr-4": {
-            "User\\Survey\\": "src/"
+            "User\\Survey\\": "src/",
+             "Helpers\\": "Helpers/"
         }
     },
     "authors": [
@@ -12,6 +13,7 @@
         }
     ],
     "require": {
-        "phpoffice/phpspreadsheet": "^3.9"
+        "phpoffice/phpspreadsheet": "^3.9",
+        "vlucas/phpdotenv": "^5.6"
     }
 }
