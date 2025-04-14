@@ -1,8 +1,8 @@
 # psb_system
 Sistem pendaftaran dan penerimaan siswa baru sekolah.
 
-## I assume that your server already has a configuration regarding database and nginx so the tutorial below is made concisely/brief. 
-## If you want a complete tutorial please visit https://github.com/smkn1gedangan/smknega
+### I assume that your server already has a configuration regarding database and nginx so the tutorial below is made concisely/brief. 
+### If you want a complete tutorial please visit https://github.com/smkn1gedangan/smknega
 
 
 ## requirement / dibutuhkan
