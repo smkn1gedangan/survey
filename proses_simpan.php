@@ -192,7 +192,7 @@
 			die();
 		}*/
 		}else{
-			$_SESSION["informasi_formulir"] = "<font color=red>Pendaftaran ditolak! Pastikan anda <b>mencentang</b> captha terlebih dahulu!</font>";
+			$_SESSION["informasi_formulir"] = "<font color=red>Pendaftaran ditolak! Pastikan anda <b>mencentang</b> captcha terlebih dahulu!</font>";
 			header("Location: dashboard.php");
 		}
 
