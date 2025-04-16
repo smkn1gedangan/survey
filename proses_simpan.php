@@ -25,7 +25,7 @@
     $context  = stream_context_create($options);
     $result = file_get_contents($url, false, $context);
     $resultJson = json_decode($result, true);
-	var_dump($resultJson);
+	
 	/**
 	*	Proses simpan dan kirim email
 	*	Data calon siswa diisikan oleh pihak luar (orang tua calon siswa)
@@ -73,7 +73,7 @@
 				// Jika proses simpan berhasil - kembalikan ke halaman awal
 				if ($proses_simpan>=1) {
 					// Set informasi
-					$_SESSION["informasi_formulir"] =" <font color=blue>Pendaftaran berhasil! Pastikan <b>no HP aktif</b>, INFORMASI tahapan selanjutnya akan dikirim ke no HP, klik menu PENDAFTAR untuk untuk melihat data anda  . Terima kasih.</font>";
+					$_SESSION["informasi_formulir"] =" <font color=blue>Pendaftaran berhasil! Pastikan <b>no HP aktif</b>, INFORMASI tahapan selanjutnya akan dikirim ke no HP atau kunjungi website resmi Smkn 1 Gedangan <a href='https://smkn1gedangan-malang.sch.id/' target='_blank'><b>di sini</b></a>, klik menu PENDAFTAR untuk untuk melihat data anda  . Terima kasih.</font>";
 
 					// Kirim email =======================>
 
@@ -193,12 +193,12 @@
 		}*/
 		}else{
 			$_SESSION["informasi_formulir"] = "<font color=red>Pendaftaran ditolak! Pastikan anda <b>mencentang</b> captcha terlebih dahulu!</font>";
-			header("Location: dashboard.php");
+			header("Location: index.php");
 		}
 
 
 	/**
-	*	Proses ubah data calon siswa
+	*	Proses ubah data calon siswaf
 	*	
 	*/
 	}

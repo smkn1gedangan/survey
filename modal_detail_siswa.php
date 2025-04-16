@@ -69,6 +69,27 @@
 <script type="text/javascript">
 	// Fungsi ambil data detail siswa berdasarkan idnya
 	function lihat_detail (id_siswa) {
+		let noTelp = $("#tlp_ot_"+id_siswa).val();
+		let awal = noTelp.substring(0,4);
+		let akhir = noTelp.slice(-4);
+		let sensor = awal + '****' + akhir;  
+		
+		// Set isinya
+		$("#cs_nama").html($("#nama_cs_"+id_siswa).html());
+		$("#cs_ttl").html($("#ttl_cs_"+id_siswa).html());
+		$("#cs_ask").html($("#asekolah_cs_"+id_siswa).html());
+		$("#ot_nama").html($("#nama_ot_"+id_siswa).html());
+		$("#ot_tlp").html(sensor);
+		$("#ot_alt").html($("#alt_ot_"+id_siswa).val());
+		$("#ot_pkj").html($("#pkj_ot_"+id_siswa).val());
+		$("#ot_eml").html($("#eml_ot_"+id_siswa).val());
+		$("#id_data_cs").val(id_siswa);
+		// Tampilkan modal
+		//$("#modal_detail").modal("show");
+	}
+	function lihat_detaild (id_siswa) {
+ 
+		
 		// Set isinya
 		$("#cs_nama").html($("#nama_cs_"+id_siswa).html());
 		$("#cs_ttl").html($("#ttl_cs_"+id_siswa).html());
@@ -83,12 +104,16 @@
 		//$("#modal_detail").modal("show");
 	}
 	function cetak (id_siswa) {
+		let noTelp = $("#tlp_ot_"+id_siswa).val();
+		let awal = noTelp.substring(0,4);
+		let akhir = noTelp.slice(-4);
+		let sensor = awal + '****' + akhir;  
 		// Set isinya
 		$("#cs_nama").html($("#nama_cs_"+id_siswa).html());
 		$("#cs_ttl").html($("#ttl_cs_"+id_siswa).html());
 		$("#cs_ask").html($("#asekolah_cs_"+id_siswa).html());
 		$("#ot_nama").html($("#nama_ot_"+id_siswa).html());
-		$("#ot_tlp").html($("#tlp_ot_"+id_siswa).val());
+		$("#ot_tlp").html(sensor);
 		$("#ot_alt").html($("#alt_ot_"+id_siswa).val());
 		$("#ot_pkj").html($("#pkj_ot_"+id_siswa).val());
 		$("#ot_eml").html($("#eml_ot_"+id_siswa).val());

@@ -136,12 +136,13 @@
 								<div class="form-group">
 								<label class="col-md-3 control-label" >
 									</label>
-									<div class="g-recaptcha col-md-8" data-sitekey="<?php echo $_ENV['SITE_KEY'];?>"></div>						
+									<div data-callback="enableSubmit" class="g-recaptcha col-md-8" data-sitekey="<?php echo $_ENV['SITE_KEY'];?>"></div>						
 								</div>
 							<hr>
 							</div>
 							<div class="panel-footer text-center">
-								<button type="submit" name="proses" id="proses" class="btn btn-primary">Simpan</button>
+								<p id="warning" class="text-danger">Silahkan centang captcha terlebih dahulu</p>
+								<button disabled style="cursor: pointer;" type="submit" name="proses" id="proses" class="btn btn-primary" >Simpan</button>
 							</div>
 						</form>
 					</div>
@@ -173,3 +174,9 @@
 	// Ambil footer
 	include("./footer.php");
 ?>
+<script>
+    function enableSubmit() {
+        document.getElementById("proses").disabled = false;
+        document.getElementById("warning").style.display = "none";
+    }
+</script>

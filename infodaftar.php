@@ -105,9 +105,11 @@
 													$data_id = $dt["data_id"];
 													// Set tgl lahir
 													$tgl_lahir_break = explode("-", $dt["tanggal_lahir_calon_siswa"]);
-													$tb[0]           = $tgl_lahir_break[2];
-													$tb[1]           = $tgl_lahir_break[1];
-													$tb[2]           = $tgl_lahir_break[0];
+													$tb[0]           = substr($tgl_lahir_break[2], 0, 1) . '*';
+													$tb[1]           = '**';
+													$tb[2]           = substr($tgl_lahir_break[0], 0, 2) . '**';
+
+
 													$tgl_lahir_baru  = implode("-", $tb);
 													// Set tgl daftar
 													$tgl_daftar_break = explode("-", (substr($dt["created_date"], 0,10)));
@@ -120,9 +122,16 @@
 													$view    .= "<tr>";
 													$view    .= "<td>$no</td>";
 													$view    .= "<td id='nama_cs_$data_id'>".stripslashes($dt["nama_calon_siswa"])."</td>";
-													$view    .= "<td id='ttl_cs_$data_id'>".stripslashes($dt["tempat_lahir_calon_siswa"]).", $tgl_lahir_baru</td>";
+
+													$lengthOtw = strlen(stripslashes($dt["tempat_lahir_calon_siswa"]));	
+													$tengah = floor($lengthOtw / 2) - 2; 
+													
+													$view    .= "<td id='ttl_cs_$data_id'>".stripslashes(substr($dt["tempat_lahir_calon_siswa"], 0, $tengah) . "****" . substr($dt["tempat_lahir_calon_siswa"], $tengah + 4)).", $tgl_lahir_baru</td>";
 													$view    .= "<td id='asekolah_cs_$data_id'>".stripslashes($dt["asal_sekolah"])."</td>";
-													$view    .= "<td id='nama_ot_$data_id'>".stripslashes($dt["nama_orang_tua_wali"])."</td>";
+
+													$lengthOtw = strlen(stripslashes($dt["nama_orang_tua_wali"]));	
+													$tengah = floor($lengthOtw / 2) - 2; 
+													$view    .= "<td id='nama_ot_$data_id'>".substr($dt["nama_orang_tua_wali"], 0, $tengah) . "****" . substr($dt["nama_orang_tua_wali"], $tengah + 4)."</td>";
 													//$view    .= "<td>".stripslashes($dt["telepon_orang_tua_wali"])."</td>";
 													$view    .= "<td id='tgl_daftar_$data_id'>$tgl_daftar_baru</td>";
 													//$view    .= "<td id='status_$data_id'>".ucfirst($dt["status_penerimaan"])."</td>";

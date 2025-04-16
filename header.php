@@ -22,7 +22,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="#">
+						<a class="navbar-brand" target="_blank" href="https://smkn1gedangan-malang.sch.id/">
 							<img src="./assets/images/sclogo.png" height="40">
 						</a>
 					</div>
